@@ -16,7 +16,7 @@ namespace BankApp
                 Console.WriteLine("\n--- BANKING SYSTEM ---");
                 Console.WriteLine("1. Create Account");
                 Console.WriteLine("2. View All Accounts");
-                Console.WriteLine("3. Exit");
+                Console.WriteLine("3. Transfer");
                 Console.Write("Select an option: ");
 
                 string option = Console.ReadLine();
@@ -59,12 +59,34 @@ namespace BankApp
                 }
                 else if (option == "3")
                 {
-                    Console.WriteLine("Goodbye!");
-                    break; // BREAKS the loop and ends the program
-                }
-                else
-                {
-                    Console.WriteLine("Invalid Option. Try again.");
+                    Console.Write("Enter Sender Name: ");
+                    string fromName = Console.ReadLine();
+
+                    Console.Write("Enter Receiver Name: ");
+                    string toName = Console.ReadLine();
+
+                    Console.Write("Enter Amount to Transfer: ");
+                    double amount = double.Parse(Console.ReadLine()); // (Use TryParse if you want to be safe!)
+
+                    // 1. FIND THE OBJECTS IN THE LIST
+                    // "x => x.Owner == name" is a Lambda Expression. It means "Find the match".
+                    BankAccount sender = accounts.Find(x => x.Owner == fromName);
+                    BankAccount receiver = accounts.Find(x => x.Owner == toName);
+
+                    // 2. CHECK IF THEY EXIST
+                    if (sender == null)
+                    {
+                        Console.WriteLine("Error: Sender not found.");
+                    }
+                    else if (receiver == null)
+                    {
+                        Console.WriteLine("Error: Receiver not found.");
+                    }
+                    else
+                    {
+                        // 3. DO THE TRANSFER (Using the logic you wrote earlier!)
+                        sender.Transfer(receiver, amount);
+                    }
                 }
             }
         }
@@ -100,6 +122,20 @@ namespace BankApp
             }
             this.Balance -= amount;
             return true;
+        }
+        public void Transfer(BankAccount receiver, double amount)
+        {
+            // Try to withdraw from THIS account first
+            if (this.Withdraw(amount))
+            {
+                // If successful, give money to the OTHER account
+                receiver.Deposit(amount);
+                Console.WriteLine("Transfer Completed!");
+            }
+            else
+            {
+                Console.WriteLine("Transfer Failed due to insufficient funds.");
+            }
         }
     }
 
