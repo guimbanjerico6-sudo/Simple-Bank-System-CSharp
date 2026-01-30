@@ -1,0 +1,14 @@
+C:\Users\ACER\Desktop\C#\LibrarySystem\LibrarySystem\bin\Debug\net8.0\LibrarySystem.exe
+C:\Users\ACER\Desktop\C#\LibrarySystem\LibrarySystem\bin\Debug\net8.0\LibrarySystem.deps.json
+C:\Users\ACER\Desktop\C#\LibrarySystem\LibrarySystem\bin\Debug\net8.0\LibrarySystem.runtimeconfig.json
+C:\Users\ACER\Desktop\C#\LibrarySystem\LibrarySystem\bin\Debug\net8.0\LibrarySystem.dll
+C:\Users\ACER\Desktop\C#\LibrarySystem\LibrarySystem\bin\Debug\net8.0\LibrarySystem.pdb
+C:\Users\ACER\Desktop\C#\LibrarySystem\LibrarySystem\obj\Debug\net8.0\LibrarySystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ACER\Desktop\C#\LibrarySystem\LibrarySystem\obj\Debug\net8.0\LibrarySystem.AssemblyInfoInputs.cache
+C:\Users\ACER\Desktop\C#\LibrarySystem\LibrarySystem\obj\Debug\net8.0\LibrarySystem.AssemblyInfo.cs
+C:\Users\ACER\Desktop\C#\LibrarySystem\LibrarySystem\obj\Debug\net8.0\LibrarySystem.csproj.CoreCompileInputs.cache
+C:\Users\ACER\Desktop\C#\LibrarySystem\LibrarySystem\obj\Debug\net8.0\LibrarySystem.dll
+C:\Users\ACER\Desktop\C#\LibrarySystem\LibrarySystem\obj\Debug\net8.0\refint\LibrarySystem.dll
+C:\Users\ACER\Desktop\C#\LibrarySystem\LibrarySystem\obj\Debug\net8.0\LibrarySystem.pdb
+C:\Users\ACER\Desktop\C#\LibrarySystem\LibrarySystem\obj\Debug\net8.0\LibrarySystem.genruntimeconfig.cache
+C:\Users\ACER\Desktop\C#\LibrarySystem\LibrarySystem\obj\Debug\net8.0\ref\LibrarySystem.dll
